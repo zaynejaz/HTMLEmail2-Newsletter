@@ -1,7 +1,7 @@
 
 
 
-#1155cc
+
 
 <!DOCTYPE html>
 <html>
@@ -14,7 +14,7 @@
 body {
 	margin: 0 !important;
 	padding: 15px;
-	background-color: #FFF;
+	background-color: #fff;
 }
 .wrapper {
 	width: 100%;
@@ -30,7 +30,6 @@ body {
 table {
 	border-spacing: 0;
 	font-family: sans-serif;
-    border: 1px solid red;
 }
 
 .outer-table {
@@ -73,12 +72,24 @@ a {
 	width: 100%;
     max-width: 670px;
 }
-
+p.footer {
+	text-align: center;
+    font-size: 12px;
+}
 p.footer.subscribe {
 	text-align: center;
     font-size: 15px;
 }
 
+p.footer.receive a,
+p.footer.address-book a{
+    color:#1155cc;
+    text-decoration: none;
+}
+
+p.footer.unsubscribe a{
+    color: #606060;
+}
 
 /*=====================MEDIA BREAKPOINTS=====================*/
 @media screen and (max-width: 400px) {
@@ -126,7 +137,7 @@ p.footer.subscribe {
     			</tr> <!-- HEADER END -->
             </table> <!-- OUTER TABLE END -->
 
-            < class="main-table">
+            <table class="main-table">
     			<tr>
     				<td class="full-column">
     					<table width="100%">
@@ -172,7 +183,7 @@ p.footer.subscribe {
     					</table>
     				</td>
                 </tr> <!--- MAIN NEWSLETTER SECTION -->
-                
+            </table>  
 
                 <table class="outer-table">
                     <tr>
@@ -188,6 +199,7 @@ p.footer.subscribe {
                 <table width="100%">
                     <tr>
                         <td class="footer">
+                            <br>
                             <p class="footer subscribe"><a href="#">Austin Kleon</a> is the author of <a href="#"><em>Steal Like An Artist</em></a> and <a href="#">other books</a>.</p>
                             <p class="footer subscribe"><a href="#">Subscribe to this newsletter</a></p>
                             <div class="section">
@@ -246,7 +258,7 @@ p.footer.subscribe {
                             <p class="footer address-book">
                                 <a href="#">Add us to your address book</a>
                             </p>
-
+                            <br>
                             <p class="footer unsubscribe">
                                 <a href="#">unsubscribe from this list</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">update subscription preferences</a>
                             </p>
