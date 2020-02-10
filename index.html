@@ -54,20 +54,21 @@ ol li,
     text-align: center;
 }
 
-a {
-    color: #ff0000;
-}
-
 .image img {
     width: 100%;
     max-width: 670px;
     height: auto;
 }
-/*--- End Outer Table 1 --*/
+/*================HEAD SECTION END================*/
 
+/*================HEAD SECTION STARTS================*/
+ol li a,
+.buy-book a{
+    color: #ff0000;
+}
+/*================HEAD SECTION END================*/
 
-
-/*--- Start Footer Section --*/
+/*================FOOTER SECTION START================*/
 .footer {
 	width: 100%;
     max-width: 670px;
@@ -81,6 +82,49 @@ p.footer.subscribe {
     font-size: 15px;
 }
 
+p.footer.subscribe a{
+	color: #ff0000;
+    font-size: 15px;
+}
+
+/* social media icons */
+.content{
+    width: 100%;
+    max-width: 670px;    
+}
+
+#social-media {
+    width: 100%;
+}
+
+#social-media img {
+    min-width: 20px;
+    max-width: 50px;
+    margin: 0 5px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.social {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+.social li {
+    display: inline-block;
+}
+.social li a {
+    text-decoration: none;
+    margin: auto;
+    padding: auto;
+}
+.social li a p.sm-text{
+    margin: none;     
+    font-size: 12px;
+}
+/* social media icons */
+
+
 p.footer.receive a,
 p.footer.address-book a{
     color:#1155cc;
@@ -90,6 +134,8 @@ p.footer.address-book a{
 p.footer.unsubscribe a{
     color: #606060;
 }
+/*================FOOTER SECTION END================*/
+
 
 /*=====================MEDIA BREAKPOINTS=====================*/
 @media screen and (max-width: 400px) {
@@ -171,7 +217,7 @@ p.footer.unsubscribe a{
                                     </ol>
                                 </p>
 
-                                <p> Thanks for reading! If you like this newsletter and want to support it, <a href="#">buy a book</a> or forward this email to a firend.</p>
+                                <p class="buy-book"> Thanks for reading! If you like this newsletter and want to support it, <a href="#">buy a book</a> or forward this email to a firend.</p>
 
                                 <p>xoxo,</p>
 
@@ -209,27 +255,26 @@ p.footer.unsubscribe a{
                                             <table class="content">
                                                 <tr>
                                                     <td>
-                                                        <div id="callout">
+                                                        <div id="social-media">
                                                             <ul class="social">
                                                                 <li>
                                                                     <a href="#" target="_blank">
                                                                         <img src="/assets/4twitter_rnd-128.png">
+                                                                        <p class="sm-text">Twitter</p>
                                                                     </a>
-                                                                    Twitter
                                                                 </li>
                                                                 <li>
                                                                     <a href="#" target="_blank">
                                                                         <img src="/assets/4instagram-128.png">
+                                                                        <p class="sm-text">Instagram</p>
                                                                     </a>
-                                                                    Instagram
                                                                 </li>
                                                                 <li>
                                                                     <a href="#" target="_blank">
                                                                         <img src="/assets/4tumblr-rnd-128.png">
+                                                                        <p class="sm-text">Tumblr</p>
                                                                     </a>
-                                                                    Tumblr
                                                                 </li>
-                                                                
                                                             </ul>
                                                         </div>
                                                     </td>
